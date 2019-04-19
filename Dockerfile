@@ -5,7 +5,8 @@ FROM redmine:latest
 
 WORKDIR /usr/src/redmine/plugins
 
-# Redhopper https://www.redmine.org/plugins/redhopper
-RUN git clone --branch 1.0.11 --depth 1 https://framagit.org/infopiiaf/redhopper.git
+# Recurring Tasks https://www.redmine.org/plugins/redmine_recurring_tasks
+RUN git clone --depth 1 https://github.com/centosadmin/redmine_recurring_tasks.git
 
 WORKDIR /usr/src/redmine
+
